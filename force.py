@@ -7,6 +7,8 @@ numbers = [-61, -60, -58, -57, -26, -16, 8, 12, 48, 91]
 def check(numbers):
     correct = 10
     
+    # The position between 44 and -32 is assumed to be position 0
+    # counted clock wise from there.
     if numbers[0] != 44+41+numbers[1]-32+numbers[-1] -78:
         correct -= 1
     if numbers[1] != 41+numbers[2]+52+numbers[6]-32+numbers[0]:
